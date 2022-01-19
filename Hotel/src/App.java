@@ -13,6 +13,7 @@ public class App {
             Class.forName("com.mysql.jdbc.Driver");
             conn = DriverManager.getConnection(url, user, pwd);
             System.out.println("Conectado com sucesso!");
+            
         } catch (ClassNotFoundException e) {
             System.out.println("Driver do banco de dados não localizado!");
         } catch (SQLException e) {
